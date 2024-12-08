@@ -1,0 +1,35 @@
+.control-panel {
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: inline-block;
+    width: 300px;
+    text-align: left;
+  }
+  
+  label {
+    display: inline-block;
+    width: 100px;
+    margin-right: 10px;
+  }
+  
+  input {
+    width: 60px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    margin-right: 5px;
+    padding: 5px 10px;
+  }
+  
+  p {
+    font-weight: bold;
+  }
+  
+  textarea { 
+    width: 100%; 
+    font-family: monospace; 
+    padding: 10px; 
+  }

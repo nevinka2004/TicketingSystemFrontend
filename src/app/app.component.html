@@ -1,0 +1,29 @@
+<div style="text-align:center">
+  <h1>Real-Time Event Ticketing System</h1>
+
+  <div class="control-panel">
+    <h2>Vendor Controls</h2>
+    <label>Vendor Count:</label>
+    <input type="number" [(ngModel)]="vendorStartCount">
+    <label>Release Rate:</label>
+    <input type="number" [(ngModel)]="vendorRate">
+    <button (click)="startVendors()">Start Vendors</button>
+    <button (click)="stopVendors()">Stop Vendors</button>
+    <p>Active Vendors: {{ vendorCount }}</p>
+  </div>
+
+  <div class="control-panel">
+    <h2>Customer Controls</h2>
+    <label>Customer Count:</label>
+    <input type="number" [(ngModel)]="customerStartCount">
+    <label>Retrieval Rate:</label>
+    <input type="number" [(ngModel)]="customerRate">
+    <button (click)="startCustomers()">Start Customers</button>
+    <button (click)="stopCustomers()">Stop Customers</button>
+    <p>Active Customers: {{ customerCount }}</p>
+  </div>
+
+  
+<div class="log-panel"> <h2>System Logs</h2> <textarea readonly rows="10" cols="50" [value]="logs.join('\n')"></textarea> </div>
+
+</div>
